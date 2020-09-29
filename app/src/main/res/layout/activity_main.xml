@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_0"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:clickable="true"
+        android:text="0"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_00"
+        app:layout_constraintEnd_toStartOf="@+id/txt_point"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_00"
+        app:layout_constraintTop_toTopOf="@+id/txt_00"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_point"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:clickable="true"
+        android:text="."
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_0"
+        app:layout_constraintEnd_toStartOf="@+id/txt_equal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_0"
+        app:layout_constraintTop_toTopOf="@+id/txt_0"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_equal"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:text="="
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_point"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_point"
+        app:layout_constraintTop_toTopOf="@+id/txt_point" />
+
+    <TextView
+        android:id="@+id/txt_00"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:text="00"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txt_0"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:clickable="true"
+        android:text="1"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBottom_toTopOf="@+id/txt_0"
+        app:layout_constraintEnd_toStartOf="@+id/txt_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_2"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:clickable="true"
+        android:text="2"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_1"
+        app:layout_constraintEnd_toStartOf="@+id/txt_3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_1" />
+
+    <TextView
+        android:id="@+id/txt_3"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:clickable="true"
+        android:text="3"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_2"
+        app:layout_constraintEnd_toStartOf="@+id/txt_add"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_2" />
+
+    <TextView
+        android:id="@+id/txt_add"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:text="+"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_3" />
+
+    <TextView
+        android:id="@+id/txt_4"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:clickable="true"
+        android:text="4"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBottom_toTopOf="@+id/txt_1"
+        app:layout_constraintEnd_toStartOf="@+id/txt_5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_5"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:clickable="true"
+        android:text="5"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_4"
+        app:layout_constraintEnd_toStartOf="@+id/txt_6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_4" />
+
+    <TextView
+        android:id="@+id/txt_6"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:clickable="true"
+        android:text="6"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_5"
+        app:layout_constraintEnd_toStartOf="@+id/txt_subtract"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_5" />
+
+    <TextView
+        android:id="@+id/txt_subtract"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:text="-"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_6" />
+
+    <TextView
+        android:id="@+id/txt_7"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:clickable="true"
+        android:text="7"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBottom_toTopOf="@+id/txt_4"
+        app:layout_constraintEnd_toStartOf="@+id/txt_8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_8"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:clickable="true"
+        android:text="8"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_7"
+        app:layout_constraintEnd_toStartOf="@+id/txt_9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_7" />
+
+    <TextView
+        android:id="@+id/txt_9"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:clickable="true"
+        android:text="9"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_8"
+        app:layout_constraintEnd_toStartOf="@+id/txt_multiply"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_8" />
+
+    <TextView
+        android:id="@+id/txt_multiply"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:text="x"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_9" />
+
+    <TextView
+        android:id="@+id/txt_clear"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp"
+        android:clickable="true"
+        android:text="C"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBottom_toTopOf="@+id/txt_7"
+        app:layout_constraintEnd_toStartOf="@+id/txt_percent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_percent"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:clickable="true"
+        android:text="%"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_clear"
+        app:layout_constraintEnd_toStartOf="@+id/txt_square"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_clear" />
+
+    <TextView
+        android:id="@+id/txt_square"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:clickable="true"
+        android:text="^"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_percent"
+        app:layout_constraintEnd_toStartOf="@+id/txt_divide"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_percent" />
+
+    <TextView
+        android:id="@+id/txt_divide"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:text="/"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_square"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_square" />
+
+    <TextView
+        android:id="@+id/txt_num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textAlignment="viewEnd"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBottom_toTopOf="@+id/txt_num2"
+        app:layout_constraintEnd_toEndOf="@+id/txt_num2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="viewEnd"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBottom_toTopOf="@+id/txt_square"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_operator"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:textAlignment="viewEnd"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_num2"
+        app:layout_constraintEnd_toStartOf="@+id/txt_num2"
+        app:layout_constraintTop_toTopOf="@+id/txt_num2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
