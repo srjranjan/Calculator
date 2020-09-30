@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                if (value == false) {
+                if (!value) {
                     txt_num1.setText(txt_num1.getText() + "0");
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                if (value == false) {
+                if (!value) {
                     txt_num1.setText(txt_num1.getText() + "00");
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                if (value == false) {
+                if (!value) {
                     txt_num1.setText(txt_num1.getText() + "1");
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                if (value == false) {
+                if (!value) {
                     txt_num1.setText(txt_num1.getText() + "2");
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                if (value == false) {
+                if (!value) {
                     txt_num1.setText(txt_num1.getText() + "3");
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                if (value == false) {
+                if (!value) {
                     txt_num1.setText(txt_num1.getText() + "4");
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                if (value == false) {
+                if (!value) {
                     txt_num1.setText(txt_num1.getText() + "5");
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                if (value == false) {
+                if (!value) {
                     txt_num1.setText(txt_num1.getText() + "6");
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                if (value == false) {
+                if (!value) {
                     txt_num1.setText(txt_num1.getText() + "7");
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
@@ -149,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                if (value == false) {
+                if (!value) {
                     txt_num1.setText(txt_num1.getText() + "8");
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
@@ -161,9 +161,10 @@ public class MainActivity extends AppCompatActivity {
         });
         txt_9.setOnClickListener(new View.OnClickListener() {
 
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                if (value == false) {
+                if (!value) {
                     txt_num1.setText(txt_num1.getText() + "9");
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
@@ -178,7 +179,7 @@ public class MainActivity extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                if (value == false) {
+                if (!value) {
                     if (txt_num1.getText() == null) {
                         txt_num1.setText("0.");
                     } else {
@@ -268,6 +269,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @SuppressLint("SetTextI18n")
     private void operation(float number1, float number2, String operator) {
         if (Float.toString(number2) == null) {
             txt_num2.setText("enter second number");
