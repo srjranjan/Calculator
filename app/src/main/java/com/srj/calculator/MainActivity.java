@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     float number1, number2, sum;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initialize();
@@ -179,8 +179,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (value == false) {
-                    txt_num1.setText(txt_num1.getText() + ".");
-                    number1 = Float.parseFloat(txt_num1.getText().toString());
+                    if (txt_num1.getText() == null) {
+                        txt_num1.setText("0.");
+                    } else {
+                        txt_num1.setText(txt_num1.getText() + ".");
+                        number1 = Float.parseFloat(txt_num1.getText().toString());
+                    }
                 } else {
 
                     txt_num2.setText(txt_num2.getText() + ".");
