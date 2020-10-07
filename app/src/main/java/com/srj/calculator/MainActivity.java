@@ -7,6 +7,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import static java.text.MessageFormat.format;
+
 public class MainActivity extends AppCompatActivity {
     TextView txt_00, txt_0, txt_1, txt_2, txt_3, txt_4, txt_5, txt_6, txt_7, txt_8, txt_9, txt_point, txt_add,
             txt_subtract, txt_multiply, txt_divide, txt_square, txt_percent, txt_clear, txt_num1, txt_num2, txt_operator, txt_equal;
@@ -22,13 +24,14 @@ public class MainActivity extends AppCompatActivity {
         initialize();
         txt_0.setOnClickListener(new View.OnClickListener() {
 
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 if (!value) {
-                    txt_num1.setText(txt_num1.getText() + "0");
+                    txt_num1.setText(format("{0}0", txt_num1.getText()));
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
-                    txt_num2.setText(txt_num2.getText() + "0");
+                    txt_num2.setText(format("{0}0", txt_num2.getText()));
                     number2 = Float.parseFloat(txt_num2.getText().toString());
                 }
             }
@@ -38,11 +41,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (!value) {
-                    txt_num1.setText(txt_num1.getText() + "00");
+                    txt_num1.setText(format("{0}00", txt_num1.getText()));
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
 
-                    txt_num2.setText(txt_num2.getText() + "00");
+                    txt_num2.setText(format("{0}00", txt_num2.getText()));
                     number2 = Float.parseFloat(txt_num2.getText().toString());
                 }
             }
@@ -52,25 +55,26 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (!value) {
-                    txt_num1.setText(txt_num1.getText() + "1");
+                    txt_num1.setText(format("{0}1", txt_num1.getText()));
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
 
-                    txt_num2.setText(txt_num2.getText() + "1");
+                    txt_num2.setText(format("{0}1", txt_num2.getText()));
                     number2 = Float.parseFloat(txt_num2.getText().toString());
                 }
             }
         });
         txt_2.setOnClickListener(new View.OnClickListener() {
 
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 if (!value) {
-                    txt_num1.setText(txt_num1.getText() + "2");
+                    txt_num1.setText(format("{0}2", txt_num1.getText()));
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
 
-                    txt_num2.setText(txt_num2.getText() + "2");
+                    txt_num2.setText(format("{0}2", txt_num2.getText()));
                     number2 = Float.parseFloat(txt_num2.getText().toString());
                 }
             }
@@ -80,11 +84,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (!value) {
-                    txt_num1.setText(txt_num1.getText() + "3");
+                    txt_num1.setText(format("{0}3", txt_num1.getText()));
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
 
-                    txt_num2.setText(txt_num2.getText() + "3");
+                    txt_num2.setText(format("{0}3", txt_num2.getText()));
                     number2 = Float.parseFloat(txt_num2.getText().toString());
                 }
             }
@@ -94,21 +98,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (!value) {
-                    txt_num1.setText(txt_num1.getText() + "4");
+                    txt_num1.setText(format("{0}4", txt_num1.getText()));
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
 
-                    txt_num2.setText(txt_num2.getText() + "4");
+                    txt_num2.setText(format("{0}4", txt_num2.getText()));
                     number2 = Float.parseFloat(txt_num2.getText().toString());
                 }
             }
         });
         txt_5.setOnClickListener(new View.OnClickListener() {
 
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 if (!value) {
-                    txt_num1.setText(txt_num1.getText() + "5");
+                    txt_num1.setText(format("{0}5", txt_num1.getText()));
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
 
@@ -119,28 +124,30 @@ public class MainActivity extends AppCompatActivity {
         });
         txt_6.setOnClickListener(new View.OnClickListener() {
 
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 if (!value) {
-                    txt_num1.setText(txt_num1.getText() + "6");
+                    txt_num1.setText(format("{0}6", txt_num1.getText()));
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
 
-                    txt_num2.setText(txt_num2.getText() + "6");
+                    txt_num2.setText(format("{0}6", txt_num2.getText()));
                     number2 = Float.parseFloat(txt_num2.getText().toString());
                 }
             }
         });
         txt_7.setOnClickListener(new View.OnClickListener() {
 
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 if (!value) {
-                    txt_num1.setText(txt_num1.getText() + "7");
+                    txt_num1.setText(format("{0}7", txt_num1.getText()));
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
 
-                    txt_num2.setText(txt_num2.getText() + "7");
+                    txt_num2.setText(format("{0}7", txt_num2.getText()));
                     number2 = Float.parseFloat(txt_num2.getText().toString());
                 }
             }
@@ -150,11 +157,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (!value) {
-                    txt_num1.setText(txt_num1.getText() + "8");
+                    txt_num1.setText(format("{0}8", txt_num1.getText()));
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
 
-                    txt_num2.setText(txt_num2.getText() + "8");
+                    txt_num2.setText(format("{0}8", txt_num2.getText()));
                     number2 = Float.parseFloat(txt_num2.getText().toString());
                 }
             }
@@ -165,11 +172,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (!value) {
-                    txt_num1.setText(txt_num1.getText() + "9");
+                    txt_num1.setText(format("{0}9", txt_num1.getText()));
                     number1 = Float.parseFloat(txt_num1.getText().toString());
                 } else {
 
-                    txt_num2.setText(txt_num2.getText() + "9");
+                    txt_num2.setText(format("{0}9", txt_num2.getText()));
                     number2 = Float.parseFloat(txt_num2.getText().toString());
                 }
             }
@@ -183,12 +190,12 @@ public class MainActivity extends AppCompatActivity {
                     if (txt_num1.getText() == null) {
                         txt_num1.setText("0.");
                     } else {
-                        txt_num1.setText(txt_num1.getText() + ".");
+                        txt_num1.setText(format("{0}.", txt_num1.getText()));
                         number1 = Float.parseFloat(txt_num1.getText().toString());
                     }
                 } else {
 
-                    txt_num2.setText(txt_num2.getText() + ".");
+                    txt_num2.setText(format("{0}.", txt_num2.getText()));
                     number2 = Float.parseFloat(txt_num2.getText().toString());
                 }
             }
