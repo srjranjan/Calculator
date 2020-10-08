@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
     TextView txt_00, txt_0, txt_1, txt_2, txt_3, txt_4, txt_5, txt_6, txt_7, txt_8, txt_9, txt_point, txt_add,
             txt_subtract, txt_multiply, txt_divide, txt_square, txt_percent, txt_clear, txt_num1, txt_num2, txt_operator, txt_equal;
     Boolean value = false;
-    //String input1;
     String operator;
     float number1, number2, sum;
 

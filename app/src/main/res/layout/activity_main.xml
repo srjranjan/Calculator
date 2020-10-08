@@ -207,6 +207,7 @@
         android:layout_width="0dp"
         android:layout_height="75dp"
         android:clickable="true"
+        android:focusable="true"
         android:text="9"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance.Material.Display2"
